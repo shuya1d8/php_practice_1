@@ -1,0 +1,516 @@
+@import url(sanitize.css);
+
+
+/* ----------------------------------------- body関係 ----------------------------------------------- */
+
+body {
+    font-family: serif;
+    /* background-color: #ffc398; */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffefe1), color-stop(100%,#ffc398));
+    background: -webkit-linear-gradient(top,  #ffefe1 0%,#ffc398 100%);
+    background: linear-gradient(to bottom,  #ffefe1 0%,#ffc398 100%);
+    width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+
+/* ----------------------------------------- header関係 ----------------------------------------------- */
+
+header img {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+}
+
+#globalNavi {
+    overflow: hidden;
+}
+
+#globalNavi ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+#globalNavi ul li {
+    float: left;
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 25%;
+    text-align: center;
+}
+
+#globalNavi ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffefe1), color-stop(100%,#ffc398));
+    background: -webkit-linear-gradient(top,  #ffefe1 0%,#ffc398 100%);
+    background: linear-gradient(to bottom,  #ffefe1 0%,#ffc398 100%);
+    color: #de5d00;
+    transition-property: background;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+#globalNavi ul li a:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff8e3d), color-stop(100%,#f8d1af));
+    background: -webkit-linear-gradient(top,  #ff8e3d 0%,#f8d1af 100%);
+    background: linear-gradient(to bottom,  #ff8e3d 0%,#f8d1af 100%);
+    color: #9e3f00;
+    font-weight: bold;
+}
+
+#globalNavi ul li.current a {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffc398), color-stop(100%,#ffefe1));
+    background: -webkit-linear-gradient(top,  #ffc398 0%,#ffefe1 100%);
+    background: linear-gradient(to bottom,  #ffc398 0%,#ffefe1 100%);
+}
+
+
+/* ----------------------------------------- footer関係 ----------------------------------------------- */
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #9e856e;
+}
+
+footer a:hover {
+    color: #874c73;
+}
+
+footer small p {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+#footerNavi {
+    background-color: #fce6d3;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    clear: both;
+}
+
+#footerNavi ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footerNavi ul li {
+    display: inline;
+    border-left: 1px solid #9e856e;
+    margin-left: 50px;
+    padding-left: 50px;
+    font-size: smaller;
+}
+
+#footerNavi ul li:last-child {
+    border-right: 1px solid #9e856e;
+    padding: 0 50px;
+}
+
+#footerNavi ul li a {
+    text-decoration: underline;
+}
+
+
+/* ----------------------------------------- wrapper関係 ----------------------------------------------- */
+
+#wrapper {
+    min-height: 550px;
+}
+
+#wrapper span {
+    color: #ff80c0;
+}
+
+
+/* ----------------------------------------- login関係 ----------------------------------------------- */
+
+#login {
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid black;
+    height: 300px;
+    width: 450px;
+    margin: 50px auto;
+    /* filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, .6)); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+    position: relative;
+}
+
+#login #login_id, #login #login_pass {
+    margin-bottom: 15px;
+    margin-left: 5px;
+    padding: 3px;
+}
+
+#login button {
+    margin-top: 10px;
+}
+
+#login p {
+    position: absolute;
+    bottom: 10px;
+    left: 150px;
+}
+
+
+/* ----------------------------------------- new_reg関係 ----------------------------------------------- */
+
+#newReg {
+    background-color: #fff;
+    border: 2px solid black;
+    width: 450px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+}
+
+#newReg h1 {
+    text-align: center;
+}
+
+#newReg table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#newReg th {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+}
+
+#newReg td {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+
+#newReg small {
+    font-size: .5em;
+}
+
+#newReg a {
+    text-align: left;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+#newReg a:hover {
+    color: #9dc971;
+}
+
+#newReg button {
+    margin: 30px 60px;
+
+}
+
+#newReg #newRegIn #name, #newRegIn #email, #newRegIn #login_id, #newRegIn #login_pass {
+    padding: 3px;
+    font-size: 1.1em;
+}
+
+#newReg #newRegCh table {
+    width: 380px;
+}
+
+#newReg #newRegCh th {
+    width: 180px;
+}
+
+#newReg #newRegCh td {
+    width: 300px;
+    padding: 25px 25px 25px 25px;
+}
+
+#newReg #newRegCh .agree {
+   margin: 10px 0 0 130px;
+}
+
+#newReg #newRegCh #agree {
+    margin-right: 5px;
+}
+
+#newReg #newRegCh button {
+    margin-left: 80px;
+}
+
+#newReg #newRegCh .error, #newReg #newRegOut .error {
+    text-align: center;
+    margin: 50px;
+}
+
+#newReg #newRegCh .error a, #newReg #newRegOut .error a {
+    text-align: center;
+    display: block;
+    margin: 30px;
+}
+
+/* ----------------------------------------- home関係 ----------------------------------------------- */
+
+#home h1 {
+    margin-bottom: 0;
+    padding-left: 30px;
+    border-bottom: 1px solid black;
+}
+
+#sidebar {
+    float: left;
+    width: 250px;
+    padding: 0 20px 0 10px;
+}
+
+#sidebar h3 {
+    margin: 20px 0 0;
+}
+
+#news dl {
+    background-color: #fff;
+    border: 1px solid black;
+    margin: 0 0 40px;
+    height: 250px;
+    overflow-y: scroll;
+    padding: 10px;
+    /* white-space: nowrap; */
+}
+
+#news dd {
+    margin: 5px 0 10px 0;
+    padding: 0 0 10px 20px;
+    border-bottom: 1px solid black;
+}
+
+#relation h3 {
+    border-bottom: 1px solid black;
+}
+
+#relation ul {
+    padding-left: 20px;
+}
+
+#relation li {
+    margin-bottom: 20px;
+}
+
+#homeMain {
+    float: left;
+    overflow: hidden;
+    width: 600px;
+}
+
+#sideProf {
+    overflow: hidden;
+    width: 350px;
+}
+
+#sideProf h2 {
+    border-bottom: 1px solid black;
+}
+
+#sideProf p {
+    border-bottom: 1px solid black;
+}
+
+#sideProfImg {
+    height: 200px;
+    width: 200px;
+    margin: 10px auto;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+#sideProfImg img {
+    height: 197px;
+    width: 197px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#homeOut {
+    text-align: center;
+}
+
+
+/* ----------------------------------------- profile関係 ----------------------------------------------- */
+
+#profile {
+    text-align: center;
+    margin: 30px auto;
+}
+
+#profMain {
+    background-color: #fff;
+    height: 700px;
+    width: 1000px;
+    margin: 0 auto;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+}
+
+#profImg {
+    height: 200px;
+    width: 200px;
+    margin: 10px auto;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+#profImg p {
+    margin-top: 90px;
+}
+
+#profImg img {
+    height: 197px;
+    width: 197px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#profInfo p {
+    font-weight: bolder;
+    border-top: 1px solid black;
+}
+
+#profInfo p:last-child {
+    padding-top: 20px;
+}
+
+#profCh .p_p {
+    text-align: center;
+}
+
+#profCh .p_p button {
+    margin: 5px 150px 10px 150px;
+}
+
+#profCh a {
+    margin: 5px 30px;
+}
+
+#profOut {
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid black;
+    height: 300px;
+    width: 450px;
+    margin: 50px auto;
+    padding-top: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+}
+
+
+/* ----------------------------------------- logout関係 ----------------------------------------------- */
+
+#logoutCh {
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid black;
+    height: 300px;
+    width: 450px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+}
+
+#logoutCh h2 {
+    margin-top: 40px;
+}
+
+#logout {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#logOut a {
+    display: block;
+    margin-top: 30px;
+}
+
+
+/* ----------------------------------------- reg_delete関係 ----------------------------------------------- */
+
+#regDel, #regDelCh {
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid black;
+    height: 300px;
+    width: 450px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+}
+
+
+/* ----------------------------------------- contact関係 ----------------------------------------------- */
+
+#contact {
+    text-align: center;
+}
+
+#contact table {
+    border-collapse: collapse;
+    width: 800px;
+    margin: 0px auto 30px;
+    border: 2px solid black;
+    text-align: left;
+    background-color: #ffecdf;
+}
+
+#contact th {
+    border: 1px solid black;
+    width: 300px;
+    padding: 10px;
+}
+
+#contact td {
+    border: 1px solid black;
+    width: 500px;
+    padding: 10px;
+}
+
+#contact button {
+    padding: 10px 20px;
+}
+
+#contact input {
+    padding: 3px;
+    font-size: 15px;
+}
+
+
+/* -----------------------------------------  ----------------------------------------------- */
+
+
+
+/* ----------------------------------------- attention関係 ----------------------------------------------- */
+
+#attention {
+    text-align: center;
+    background-color: rgba(255, 255, 255, .7);
+    margin-bottom: 21px;
+}
+
+#attention h1 {
+    padding-top: 30px;
+}
+
+#attention img {
+    max-width: 400px;
+}
+
+
+/* -----------------------------------------  ----------------------------------------------- */
+
